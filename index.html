@@ -6,9 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Moment 2</title>
     <link rel="stylesheet" href="src/style.css">
+    <script type="module" src="/src/main.ts"></script>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
+    <div class="main-container">
+      <h1>Att göra lista</h1>
+    <form id="todoForm">
+      <input type="text" id="task" placeholder="Skriv in här..">
+      <select id="priority">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+      <button type="submit">Lägg till</button>
+      </form>
+
+      <h2>Min lista</h2>
+      <ul id="todo-list"></ul>
+    </div>
   </body>
 </html>
