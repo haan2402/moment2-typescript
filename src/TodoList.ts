@@ -52,4 +52,10 @@ public loadFromLocalStorage(): void {
             new Todo(c.task, c.completed, c.priority));
     } 
 }
+
+//en metod för att kunna ta bort en todo
+public deleteTodo(task: string): void {
+    this.todos = this.todos.filter(c => c.task !== task)
+    this.saveToLocalStorage();
+}
 }
