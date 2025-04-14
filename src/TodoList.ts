@@ -1,5 +1,19 @@
-//importerar todo klassen
-import { Todo } from "./Todo";
+
+//importerar interface för todo
+import { ITodo } from "./ITodo";
+
+//gör en klass för todo
+class Todo implements ITodo {
+    task: string;
+    completed: boolean;
+    priority: number;
+
+    constructor(task: string, completed: boolean, priority: number) {
+        this.task = task;
+        this.completed = completed;
+        this.priority = priority;
+    }
+}
 
 export class TodoList {
     private todos: Todo[] = []; //gör en array av todos
