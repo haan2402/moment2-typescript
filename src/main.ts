@@ -1,5 +1,5 @@
 //importerar todolist
-import { TodoList } from "./todolist";
+import { TodoList } from "./TodoList";
 
 //gör ett obejkt av todolist
 const todoList = new TodoList();

@@ -1,5 +1,5 @@
 //importerar todo klassen
-import { Todo } from "./todo";
+import { Todo } from "./Todo";
 
 export class TodoList {
     private todos: Todo[] = []; //gör en array av todos
